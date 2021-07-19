@@ -1,24 +1,37 @@
 <template>
- 
+<h1>Project Manager</h1>
+<Navbar/>
+  <router-view/>
 </template>
 
 <script>
+import Navbar from './components/Navbar.vue'
 
 export default {
-  name: 'App',
-  components: {
-  
+  components:
+  {
+    Navbar
   }
+  
 }
 </script>
 
 <style>
+
+body{
+  background: #f2f2f2;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+max-width: 600px;
+margin: 0 auto;
+  color: #555;
 }
+h1{
+  text-align: center;
+}
+
 </style>
